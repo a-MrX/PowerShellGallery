@@ -70,7 +70,7 @@ If (-not (test-path -path $LocalFolder)) {
 }
     
 
-Write-Host "Retrieving all modules published by the author $AuthorName"
+Write-Host -foregroundcolor Green "Retrieving all modules published by the author $AuthorName"
 
 find-module -repository psgallery |Where-Object { 
         if($_.Author.count -eq 1) {
